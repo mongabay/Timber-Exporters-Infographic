@@ -1,0 +1,191 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* Chart */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.main {
+    .header {
+        .title {
+            text-align: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 1rem 0 2rem 0;
+        }
+    }
+    .input {
+        margin-bottom: 1rem;
+        &__label {
+            width: 60px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        &__options {
+            width: calc(100% - 60px);
+            .option {
+                display: inline-block;
+                display: block;
+                padding: 0.5rem 0.70rem;
+                margin: 0.15rem;
+                background-color: #6baed6;
+                color: #fff;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 3px;
+                &:hover {
+                    background-color: #66c2a4;
+                }
+                &.active {
+                    background-color: #2ca25f;
+                }
+            }
+        }
+    }
+    .chart {
+        .item {
+            margin-bottom: 0.5rem;
+            .wrapper {
+                width: 100%;
+                background-color: #f0f9e8;
+                height: 60px;
+            }
+            .name {
+                float: left;
+                width: 160px;
+                text-align: right;
+                font-size: 0.75rem; // text-transform: uppercase;
+                padding: 5px;
+                line-height: 1.35;
+                overflow: hidden;
+                height: 60px;
+            }
+            .logo {
+                float: left;
+                height: 50px;
+                width: 50px;
+                margin: 5px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bar {
+                float: left;
+                margin: 5px;
+                background-color: #43a2ca;
+                height: 50px;
+            }
+            .value {
+                float: left;
+                width: 100px;
+                text-align: right;
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1rem;
+                overflow: hidden;
+                height: 60px;
+            }
+        }
+    }
+}
+
+.card {
+    display: none;
+    position: absolute;
+    left: 10px;
+    width: 100%;
+    max-width: 580px;
+    background-color: #ddd;
+    border-radius: 3px;
+    // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    &__inner {}
+    &__title {
+        margin: 0;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__header {
+        border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+        &__logo {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        &__content {
+            width: 100%;
+            height: 80px;
+        }
+    }
+    &__content {
+        .cell {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .label {
+                font-size: 13px;
+                font-weight: 700;
+                margin-bottom: 0.25rem;
+            }
+            .value {
+                line-height: 1.5;
+                font-size: 13px;
+            }
+        }
+    }
+    &:after {
+        position: absolute;
+        bottom: 100%;
+        left: 75px;
+        margin-left: -5px;
+        width: 0;
+        border-top: none;
+        border-bottom: 10px solid #ddd;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+    }
+    &--top {
+        &::after {
+            position: absolute;
+            top: 100%;
+            left: 75px;
+            margin-left: -5px;
+            width: 0;
+            border-bottom: none;
+            border-top: 10px solid #ddd;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            content: " ";
+            font-size: 0;
+            line-height: 0;
+        }
+    }
+}

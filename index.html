@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h1 class="title">Vestibulum suscipit nulla</h1>
+            </div>
+            <div class="input flex flex-items-center flex-justify-center">
+                <div class="input__label">Países:</div>
+                <ul class="input__options flex flex-auto" id="countries">
+                    <li class="option active">
+                        <span>Perú</span>
+                    </li>
+                    <li class="option">
+                        <span>Ecuador</span>
+                    </li>
+                    <li class="option">
+                        <span>Colombia</span>
+                    </li>
+                    <li class="option">
+                        <span>Bolivia</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="input flex flex-items-center flex-justify-center flex-wrap">
+                <div class="input__label">Año:</div>
+                <ul class="input__options flex flex-wrap flex-auto" id="years">
+                </ul>
+            </div>
+            <div class="chart" id="chart"></div>
+            <!-- <div class="modal" id="card"> -->
+            <div class="card" id="card">
+                <div class="card__inner">
+                    <!-- <div class="card__header flex">
+                        <div class="card__header__logo flex">
+                            <img src="images/logos/bozovich.jpg" alt="" id="card-logo">
+                        </div>
+                        <div class="flex fill-v card__header__content">
+                            <div class="flex flex-items-center flex-justify-center fill-h">
+                                <h2 class="card__title" id="card-empresa">Corporación Forestal Claudita S.A.C.</h2>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="card__content">
+                        <div class="cell">
+                            <div class="label">Gerente general:</div>
+                            <div class="value" id="card-gerente">
+                                Navarrete Rejas Hugo Javier (Loreto, Perú)
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="label">
+                                Antecedentes:
+                            </div>
+                            <div class="value" id="card-antecedentes">
+                                Según un análisis de la ONG Environmental Investigation Agency (EIA) presentado en su informe "El momento de la verdad",
+                                de las 219 guías de transporte forestal (GTF) presentadas por Peruvian Flooring a la Sunat
+                                en el 2015, ocho de ellas son de origen ilegal. Además, existe un alto riesgo que de este
+                                mismo universo, catorce GTF también contengan información falsa para la exportación de madera
+                                ilícita.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/Top10Bars.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
