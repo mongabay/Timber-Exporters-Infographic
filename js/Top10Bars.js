@@ -183,7 +183,7 @@ function Top10Bars(options) {
         $("#card").css('top', offset.top + 52);
         $("#card").show();
         var ch = $("#card").height();
-        if ($("#card").offset().top + $("#card").height() > $(window).height() + $(window).scrollTop()) {
+        if ($("#card").offset().top + $("#card").height() > $(window).height() + $(window).scrollTop() - 50) {
             $("#card").css('top', offset.top - 55 - $("#card").height());
             $("#card").addClass('card--top');
         } else {
