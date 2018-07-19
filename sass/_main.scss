@@ -21,18 +21,30 @@ body {
 
 .main {
     .header {
+        margin-bottom: 1rem;
         .title {
             text-align: center;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin: 1rem 0 2rem 0;
+            font-size: 1.25rem; // text-transform: uppercase;
+            margin: 1rem 0 0.5rem 0;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.35;
         }
     }
+    .footer {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.75;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .input {
-        margin-bottom: 1rem;
+        margin-bottom: 8px;
         &__label {
             width: 60px;
-            font-size: 1rem;
+            font-size: 14px;
             font-weight: 400;
         }
         &__options {
@@ -46,7 +58,7 @@ body {
                 color: #fff;
                 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
                 text-transform: uppercase;
-                font-size: 0.85rem;
+                font-size: 0.75rem;
                 font-weight: 500;
                 cursor: pointer;
                 border-radius: 3px;
@@ -116,9 +128,8 @@ body {
     width: 100%;
     max-width: 580px;
     background-color: #ddd;
-    border-radius: 3px;
-    // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
-    padding: 1rem;
+    border-radius: 3px; // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+    padding: 10px;
     &__inner {}
     &__title {
         margin: 0;
