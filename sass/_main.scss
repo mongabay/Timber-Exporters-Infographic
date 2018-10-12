@@ -22,33 +22,52 @@ body {
 .main {
     .header {
         margin-bottom: 1rem;
+
         .title {
             text-align: center;
-            font-size: 1.25rem; // text-transform: uppercase;
+            font-size: 1.25rem;
             margin: 1rem 0 0.5rem 0;
         }
+
         p {
             font-size: 14px;
             line-height: 1.35;
         }
     }
+
     .footer {
-        text-align: right;
-        font-size: 12px;
-        font-weight: 500;
-        opacity: 0.75;
-        margin-top: 10px;
-        padding-bottom: 50px;
+        .logo-op {
+            float: left;
+            margin-left: 4px;
+
+            img {
+                vertical-align: top;
+                height: 18px;
+            }
+        }
+
+        .source {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 0.75;
+            margin-top: 10px;
+            padding-bottom: 50px;
+        }
     }
+
     .input {
         margin-bottom: 8px;
+
         &__label {
             width: 60px;
             font-size: 14px;
             font-weight: 400;
         }
+
         &__options {
             width: calc(100% - 60px);
+
             .option {
                 display: inline-block;
                 display: block;
@@ -62,23 +81,28 @@ body {
                 font-weight: 500;
                 cursor: pointer;
                 border-radius: 3px;
+
                 &:hover {
                     background-color: #66c2a4;
                 }
+
                 &.active {
                     background-color: #2ca25f;
                 }
             }
         }
     }
+
     .chart {
         .item {
             margin-bottom: 0.5rem;
+
             .wrapper {
                 width: 100%;
                 background-color: #f0f9e8;
                 height: 60px;
             }
+
             .name {
                 float: left;
                 width: 160px;
@@ -89,23 +113,27 @@ body {
                 overflow: hidden;
                 height: 60px;
             }
+
             .logo {
                 float: left;
                 height: 50px;
                 width: 50px;
                 margin: 5px;
+
                 img {
                     display: block;
                     width: 100%;
                     height: 100%;
                 }
             }
+
             .bar {
                 float: left;
                 margin: 5px;
                 background-color: #43a2ca;
                 height: 50px;
             }
+
             .value {
                 float: left;
                 width: 100px;
@@ -130,45 +158,56 @@ body {
     background-color: #ddd;
     border-radius: 3px; // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
     padding: 10px;
+
     &__inner {}
+
     &__title {
         margin: 0;
         padding-bottom: 0.5rem;
         text-align: center;
         font-size: 18px;
     }
+
     &__header {
         border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+
         &__logo {
             width: 80px;
             height: 80px;
             overflow: hidden;
+
             img {
                 width: 100%;
             }
         }
+
         &__content {
             width: 100%;
             height: 80px;
         }
     }
+
     &__content {
         .cell {
             margin-bottom: 10px;
+
             &:last-child {
                 margin-bottom: 0;
             }
+
             .label {
                 font-size: 13px;
                 font-weight: 700;
                 margin-bottom: 0.25rem;
             }
+
             .value {
                 line-height: 1.5;
                 font-size: 13px;
             }
         }
     }
+
     &:after {
         position: absolute;
         bottom: 100%;
@@ -183,6 +222,7 @@ body {
         font-size: 0;
         line-height: 0;
     }
+
     &--top {
         &::after {
             position: absolute;
