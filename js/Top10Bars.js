@@ -11,7 +11,7 @@ function Top10Bars(options) {
     self.svg = null;
 
     self.selectedCountry = 'Perú';
-    self.selectedYear = 'todos';
+    self.selectedYear = 'All';
 
     /* Init environment */
     self.init = function () {};
@@ -36,9 +36,9 @@ function Top10Bars(options) {
         var ret = ''
         var str = d.toString();
         if (d > 999999) {
-            ret = str.slice(-9, -6) + "'" + str.slice(-6, -3) + '.' + str.slice(-3);
+            ret = str.slice(-9, -6) + "," + str.slice(-6, -3) + ',' + str.slice(-3);
         } else if (d > 999) {
-            ret = str.slice(-6, -3) + '.' + str.slice(-3);
+            ret = str.slice(-6, -3) + ',' + str.slice(-3);
         } else {
             ret = str.slice(-3);
         }
@@ -150,7 +150,7 @@ function Top10Bars(options) {
         for (var year in self.data.ranking[country]) {
             $("#years").append(
                 $("<li></li>", {
-                    class: 'option' + (year == 'todos' ? ' active' : '')
+                    class: 'option' + (year == 'All' ? ' active' : '')
                 })
                 .html('<span>' + year + '</span>')
             );
@@ -165,7 +165,7 @@ function Top10Bars(options) {
             self.render(country, year);
         });
 
-        self.render(country, 'todos');
+        self.render(country, 'All');
     };
 
     self.showCard = function (obj, item) {
